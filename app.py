@@ -20,7 +20,7 @@ st.set_page_config(page_title="Heart Disease Prediction App", layout="centered")
 
 
 # Load and encode your background image
-with open("/home/rgukt/Downloads/Heart-Disease-Prediction/heart.jpeg", "rb") as img_file:
+with open("heart.jpeg", "rb") as img_file:
     encoded_img = base64.b64encode(img_file.read()).decode()
 
 # Streamlit CSS - Balanced background and visible text
@@ -101,7 +101,7 @@ st.markdown(f"""
 
 
 
-loaded_file=pickle.load(open('/home/rgukt/Downloads/Heart-Disease-Prediction/heart_disease_model.sav','rb'))
+loaded_file=pickle.load(open('heart_disease_model.sav','rb'))
 
 
 
